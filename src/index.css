@@ -6,3 +6,13 @@
 body {
   @apply bg-white text-black dark:bg-gray-900 dark:text-white;
 }
+.primary-text-bg-gradient {
+  @apply bg-linear-to-r from-yellow-400 via-pink-400 to-red-400 bg-clip-text text-transparent;
+}
+
+.primary-bg-gradient {
+  @apply bg-linear-to-r from-purple-400 via-pink-400 to-red-400 hover:opacity-90 text-white transition-all duration-300 ease-in-out;
+}
+.ss {
+  @apply bg-[#7ec0c0];
+}
