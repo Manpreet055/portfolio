@@ -1,7 +1,13 @@
 import "./index.css";
-
+import HeroSection from "./sections/HeroSection";
+import NavbarComponent from "./layout/Navbar";
 function App() {
-  return <div className="h-screen text-red-300">Hello World</div>;
+  return (
+    <>
+      <NavbarComponent />
+      <HeroSection />
+    </>
+  );
 }
 
 export default App;
