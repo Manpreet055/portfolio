@@ -5,7 +5,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { User2, Instagram, Github, Linkedin } from "lucide-react";
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
 

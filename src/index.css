@@ -3,13 +3,18 @@
 @source "../.flowbite-react/class-list.json";
 @variant dark (&:where(.dark, .dark *));
 
-html {
+html,
+body {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   @apply bg-white text-black dark:bg-gray-900 dark:text-white;
+}
+
+.Inter {
+  font-family: "Inter", sans-serif;
 }
 
 /* Gradient Backgrounds */

@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="mx-3 sm:mx-6 mt-2 sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-8 xl:px-32 py-8 sm:py-16 bg-gray-100 dark:bg-gray-800">
+    <section
+      id="home"
+      className="mx-3 sm:mx-6 mt-2 sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-8 xl:px-32 py-8 sm:py-16 bg-gray-100 dark:bg-gray-800"
+    >
       <div className="p-1 sm:p-4 max-w-2xl gap-6 h-full flex flex-col items-start justify-center">
         <motion.h3
           initial={{ opacity: 0, x: -100 }}
@@ -63,7 +66,7 @@ const HeroSection = () => {
         className="text-pink-300/15  bottom-0 blur-2xl "
           path="M56.2,-14.1C65.3,9.6,59.7,42.1,38.7,58.7C17.7,75.2,-18.9,75.8,-43.4,58.3C-67.9,40.9,-80.4,5.4,-71.1,-18.6C-61.9,-42.6,-30.9,-55,-3.7,-53.8C23.6,-52.6,47.2,-37.8,56.2,-14.1Z"
         /> */}
-    </div>
+    </section>
   );
 };
 
