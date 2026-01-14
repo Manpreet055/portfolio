@@ -19,7 +19,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl sm:text-6xl font-bold max-w-2xs sm:max-w-lg"
+          className="text-4xl sm:text-6xl font-bold max-w-xs sm:max-w-lg"
         >
           Hello, I'm Manpreet Singh
         </motion.h1>

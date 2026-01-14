@@ -7,7 +7,8 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import { DarkThemeToggle } from "flowbite-react";
-import { navbarTheme } from "../utils/customFlowbiteThemes";
+import { navbarTheme } from "../../utils/customFlowbiteThemes";
+import SideBar from "./Sidebar";
 
 const NavbarComponent = () => {
   return (
@@ -24,7 +25,7 @@ const NavbarComponent = () => {
         <button className="dark:text-black my-2 dark:bg-white bg-black text-white py-2 font-semibold hover:bg-gray-200 transition-all duration-300 ease-in-out px-5 rounded-4xl  hidden md:block">
           Hire Me
         </button>
-        <NavbarToggle />
+        <SideBar />
       </div>
       <NavbarCollapse>
         <NavbarLink href="#" active>
