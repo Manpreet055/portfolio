@@ -3,8 +3,7 @@
 @source "../.flowbite-react/class-list.json";
 @variant dark (&:where(.dark, .dark *));
 
-html,
-body {
+html {
   scroll-behavior: smooth;
 }
 
