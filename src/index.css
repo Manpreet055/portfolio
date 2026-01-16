@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease-in-out;
   @apply bg-white text-black dark:bg-gray-900 dark:text-white;
 }
 html,
@@ -29,18 +30,22 @@ body {
 .primary-bg-gradient {
   @apply bg-linear-to-r from-purple-400 via-pink-400 to-red-400 hover:opacity-90 text-white transition-all duration-300 ease-in-out;
 }
-.ss {
-  @apply bg-[#7ec0c0];
-}
 
 /* Theme Styles */
 .theme {
-  @apply bg-[#f8f8f8] dark:bg-[#0B0E14] ease-in-out duration-400 transition-colors;
+  background-color: #f8f8f8;
+  transition: all 0.4s ease-in-out;
+}
+.dark .theme {
+  background-color: #0b0e14;
+}
+.text-theme {
+  color: black;
+}
+.dark .text-theme {
+  color: #f0f6fc;
 }
 
-.text-theme {
-  @apply text-black dark:text-[#F0F6FC];
-}
 .theme-alt {
   @apply dark:bg-[#f8f8f8] bg-[#121212];
   @apply transition-all duration-200 cursor-pointer;
@@ -79,4 +84,25 @@ body {
 
 section {
   scroll-margin-top: 6rem; /* Adjust based on your navbar height */
+}
+
+/* Banner animation  */
+@keyframes infinite_scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@layer utilities {
+  .animate-infinite-scroll {
+    animation: infinite_scroll 55s linear infinite;
+    /* @media (max-width: 640px) {
+      animation-duration: 4s;
+    } */
+  }
+  /* .animate-infinite-scroll:hover {
+    animation-play-state: paused;
+  } */
 }
