@@ -4,19 +4,16 @@ import TypewriterComponent from "typewriter-effect";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const roles = [
-    "Full-Stack MERN Developer",
-    "Frontend-Focused Engineer",
-    "Building Production-Ready Web Apps",
-    "Turning Ideas Into Scalable Products",
-    "Clean UI. Solid Logic. Real Results.",
-  ];
+  const keywords = ["Secure", "Responsive", "Scalable", "Dynamic"];
   return (
     <section
       id="hero"
       className="mx-3 sm:mx-6 lg:mx-16 mt-2 sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 dark:bg-gray-800"
     >
       <div className="p-1 sm:p-4 max-w-2xl gap-6 h-full flex flex-col items-start justify-center">
+        <h1 className="text-lg sm:text-xl font-semibold ">
+          Mern stack developer
+        </h1>
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -26,10 +23,11 @@ const HeroSection = () => {
           Hello, I'm Manpreet Singh
         </motion.h1>
 
-        <p className="text-xl font-semibold">
+        <p className="flex items-center md:text-lg whitespace-nowrap font-semibold">
+          I build&nbsp;
           <TypewriterComponent
             options={{
-              strings: roles,
+              strings: keywords,
               typeSepeed: 60,
               deleteSpeed: 30,
               delaySpeed: 2000,
@@ -37,6 +35,7 @@ const HeroSection = () => {
               loop: true,
             }}
           />
+          web applications.
         </p>
         <motion.p
           initial={{ opacity: 0, x: -100 }}
