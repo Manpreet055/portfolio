@@ -6,14 +6,14 @@ import About from "./sections/About";
 import Projects from "./sections/Projects";
 function App() {
   return (
-    <Router>
+    <>
       <NavbarComponent />
-      <main>
+      <main className="mt-20">
         <HeroSection />
         <About />
         <Projects />
       </main>
-    </Router>
+    </>
   );
 }
 

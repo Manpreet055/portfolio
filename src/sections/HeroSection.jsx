@@ -13,7 +13,7 @@ const HeroSection = () => {
   ];
   return (
     <section
-      id="home"
+      id="hero"
       className="mx-3 sm:mx-6 lg:mx-16 mt-2 sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 dark:bg-gray-800"
     >
       <div className="p-1 sm:p-4 max-w-2xl gap-6 h-full flex flex-col items-start justify-center">
@@ -55,12 +55,18 @@ const HeroSection = () => {
           transition={{ duration: 0.9 }}
           className="flex items-center gap-4"
         >
-          <button className="px-5 py-3 primary-bg-gradient text-white rounded-3xl text-sm font-semibold hover:bg-blue-700 shadow-2xl transition">
+          <a
+            href="#contact"
+            className="px-5 py-3 primary-bg-gradient text-white rounded-3xl text-sm font-semibold hover:bg-blue-700 shadow-2xl transition"
+          >
             Contact Me
-          </button>
-          <button className="px-5 py-3 bg-white text-black rounded-3xl text-sm font-semibold hover:bg-gray-200 shadow-2xl transition-all duration-300 ease-in-out">
+          </a>
+          <a
+            href="#projects"
+            className="px-5 py-3 bg-white text-black rounded-3xl text-sm font-semibold hover:bg-gray-200 shadow-2xl transition-all duration-300 ease-in-out"
+          >
             View Portfolio
-          </button>
+          </a>
         </motion.div>
       </div>{" "}
       {/* <Blob

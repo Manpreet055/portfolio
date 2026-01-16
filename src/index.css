@@ -11,6 +11,11 @@ body {
   font-family: "Poppins", sans-serif;
   @apply bg-white text-black dark:bg-gray-900 dark:text-white;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .Inter {
   font-family: "Inter", sans-serif;
@@ -70,4 +75,8 @@ body {
 .hide-scrollbar {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+section {
+  scroll-margin-top: 6rem; /* Adjust based on your navbar height */
 }

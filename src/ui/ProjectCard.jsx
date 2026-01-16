@@ -11,7 +11,7 @@ const ProjectCard = ({
   popover = false,
 }) => {
   return (
-    <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition">
+    <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-xl hover:shadow-md transitions">
       <Icon className="mx-auto mb-4 text-theme" size={48} />
       <h3 className="text-xl font-semibold mb-2 text-center">{projectName}</h3>
       <p className="text-theme max-w-sm mx-auto text-sm md:text-base text-center">

@@ -5,7 +5,10 @@ import coreSkills from "../utils/coreSkills.js";
 import { container, item } from "../animation/ListStagger.js";
 const CoreSkills = () => {
   return (
-    <div className="w-full flex px-4 md:px-10 flex-col justify-center items-center">
+    <section
+      id="core-skills"
+      className="w-full flex  md:px-10 flex-col justify-center items-center"
+    >
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +24,7 @@ const CoreSkills = () => {
         whileInView="visible"
         exit="hidden"
         viewport={{ once: true }}
-        className="h-full  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2  w-full  mt-6 gap-x-4 md:gap-y-4"
+        className="h-full  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2  w-full place-items-center mt-6 gap-x-4 md:gap-y-4"
       >
         {coreSkills.map((skill, index) => (
           <motion.li
@@ -37,7 +40,7 @@ const CoreSkills = () => {
           </motion.li>
         ))}
       </motion.ul>
-    </div>
+    </section>
   );
 };
 

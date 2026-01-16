@@ -1,30 +1,57 @@
 "use client";
 
 import { BarsIcon, Drawer, DrawerItems } from "flowbite-react";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { User2, Instagram, Github, Linkedin } from "lucide-react";
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeHash, setActiveHash] = useState("");
+
+  useEffect(() => {
+    // Set initial hash
+    setActiveHash(window.location.hash);
+
+    // Listen for hash changes
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   const handleClose = () => setIsOpen(false);
 
+  const handleNavClick = (hash) => {
+    setActiveHash(hash);
+    setIsOpen(false);
+  };
+
+  const getLinkClassName = (hash) => {
+    return `flex w-full font-medium rounded-lg transitions px-4 py-3 ${
+      activeHash === hash
+        ? "primary-bg-gradient text-white"
+        : "text-theme hover:bg-gray-100 dark:hover:bg-gray-800"
+    }`;
+  };
+
   return (
     <>
-      <div className="flex my-3  mr-1 items-center justify-center">
-        <button className="block md:hidden " onClick={() => setIsOpen(true)}>
+      <div className="flex my-3 mr-1 items-center justify-center">
+        <button className="block md:hidden" onClick={() => setIsOpen(true)}>
           <BarsIcon />
         </button>
       </div>
 
       <Drawer
-        className="flex flex-col  gap-5"
+        className="flex flex-col gap-1 "
         open={isOpen}
         onClose={handleClose}
       >
         <div className="flex flex-col items-center mt-4">
           <User2
-            className="h-30 border rounded-full  w-30 text-gray-400"
+            className="h-30 border rounded-full w-30 text-gray-400"
             strokeWidth={1}
           />
           <h2 className="mt-2 text-lg tracking-wider font-semibold">
@@ -32,71 +59,62 @@ const Sidebar = () => {
           </h2>
           <h1 className="text-sm tracking-wide mt-1">Mern Stack Developer</h1>
         </div>
+
         <DrawerItems className="focus:border-none">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `flex w-full  font-medium  rounded-lg transitions ${
-                isActive ? " primary-bg-gradient px-4 py-3 " : "text-theme "
-              }`
-            }
+          <a
+            onClick={() => handleNavClick("#hero")}
+            href="#hero"
+            className={getLinkClassName("#hero")}
           >
             Home
-          </NavLink>
+          </a>
         </DrawerItems>
+
         <DrawerItems className="focus:border-none">
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `flex w-full  font-medium  rounded-lg transitions ${
-                isActive ? " primary-bg-gradient px-4 py-3 " : "text-theme "
-              }`
-            }
+          <a
+            href="#about"
+            onClick={() => handleNavClick("#about")}
+            className={getLinkClassName("#about")}
           >
             About
-          </NavLink>
+          </a>
         </DrawerItems>
+
         <DrawerItems className="focus:border-none">
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              `flex w-full  font-medium  rounded-lg transitions ${
-                isActive ? " primary-bg-gradient px-4 py-3 " : "text-theme "
-              }`
-            }
+          <a
+            href="#projects"
+            onClick={() => handleNavClick("#projects")}
+            className={getLinkClassName("#projects")}
           >
             Projects
-          </NavLink>
+          </a>
         </DrawerItems>
+
         <DrawerItems className="focus:border-none">
-          <NavLink
-            to="/skills"
-            className={({ isActive }) =>
-              `flex w-full  font-medium  rounded-lg transitions ${
-                isActive ? " primary-bg-gradient px-4 py-3 " : "text-theme "
-              }`
-            }
+          <a
+            href="#core-skills"
+            onClick={() => handleNavClick("#core-skills")}
+            className={getLinkClassName("#core-skills")}
           >
             Skills
-          </NavLink>
+          </a>
         </DrawerItems>
+
         <DrawerItems className="focus:border-none">
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `flex w-full  font-medium  rounded-lg transitions  ${
-                isActive ? " primary-bg-gradient px-4 py-3 " : "text-theme "
-              }`
-            }
+          <a
+            href="#contact"
+            onClick={() => handleNavClick("#contact")}
+            className={getLinkClassName("#contact")}
           >
             Contact Me
-          </NavLink>
+          </a>
         </DrawerItems>
+
         <div className="mt-auto mb-27 sm:mb-4">
           <h1 className="w-full text-center mb-4 font-bold tracking-wider">
             Social Links
           </h1>
-          <div className="flex justify-around w-full  px-5">
+          <div className="flex justify-around w-full px-5">
             <a
               href="https://www.instagram.com/0hi.manni/"
               target="_blank"
@@ -127,4 +145,5 @@ const Sidebar = () => {
     </>
   );
 };
+
 export default Sidebar;
