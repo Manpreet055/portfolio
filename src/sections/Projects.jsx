@@ -15,7 +15,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="w-full text-start mt-10 text-3xl sm:text-4xl font-bold"
+        className="w-full text-start mt-10 text-3xl px-4 sm:px-0   sm:text-4xl font-bold"
       >
         My Projects
       </motion.h1>

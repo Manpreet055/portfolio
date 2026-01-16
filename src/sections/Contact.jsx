@@ -5,14 +5,16 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="mx-3 sm:mx-6 mt-5 sm:mt-10 mb-10 w-full flex px-4 md:px-10 flex-col justify-center items-center"
+      className=" px-4 flex-col justify-center items-center"
     >
       <h2 className="text-4xl w-full font-bold text-center ">Get in Touch</h2>
-      <h3 className="w-full text-center font-medium mt-2 mb-4">
+      <h3 className="w-full text-sm text-gray-300 text-center font-medium mt-1 mb-4">
         Interested in working together? Let's connect!
       </h3>
-      <ContactCard />
-      <ContactForm />
+      <div className="flex gap-y-6 flex-col lg:flex-row mt-6 justify-around items-center w-full h-full ">
+        <ContactCard />
+        <ContactForm />
+      </div>
     </section>
   );
 };

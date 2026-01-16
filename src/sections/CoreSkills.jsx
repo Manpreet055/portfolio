@@ -14,7 +14,7 @@ const CoreSkills = () => {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="w-full h-fit text-start mt-10 text-3xl sm:text-4xl font-bold"
+        className="w-full h-fit text-start px-4 sm:px-0   mt-10 text-3xl sm:text-4xl font-bold"
       >
         Core competencies{" "}
       </motion.h1>

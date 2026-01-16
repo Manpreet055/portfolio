@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
   const {
@@ -14,7 +15,13 @@ const ContactForm = () => {
     reset();
   };
   return (
-    <div className="dark:border shadow-lg dark:border-gray-500 max-w-4xl w-full   rounded-xl">
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.5 }}
+      className="dark:border shadow-lg dark:border-gray-700 max-w-4xl w-full   rounded-xl"
+    >
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-4 w-full py-6 px-4 max-w-xl mx-auto"
@@ -81,13 +88,13 @@ const ContactForm = () => {
         <div>
           <button
             type="submit"
-            className="primary-bg-gradient rounded-3xl font-medium px-10 py-3 text-white transitions hover:scale-103"
+            className="primary-bg-gradient rounded-3xl font-medium px-10 py-3 text-white transitions hover:scale-105"
           >
             Send Message
           </button>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
