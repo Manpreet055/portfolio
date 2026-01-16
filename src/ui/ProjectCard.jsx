@@ -1,9 +1,11 @@
 import React from "react";
 import { Popover } from "flowbite-react";
+
 const ProjectCard = ({
   Icon = null,
   projectName = "",
   projectDescription = "",
+
   liveLink = "#",
   githubRepo = "#",
   popover = false,

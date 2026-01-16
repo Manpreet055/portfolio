@@ -4,20 +4,19 @@ import TypewriterComponent from "typewriter-effect";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
+  const roles = [
+    "Full-Stack MERN Developer",
+    "Frontend-Focused Engineer",
+    "Building Production-Ready Web Apps",
+    "Turning Ideas Into Scalable Products",
+    "Clean UI. Solid Logic. Real Results.",
+  ];
   return (
     <section
       id="home"
-      className="mx-3 sm:mx-6 mt-2 sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-8 xl:px-32 py-8 sm:py-16 bg-gray-100 dark:bg-gray-800"
+      className="mx-3 sm:mx-6 lg:mx-16 mt-2 sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 dark:bg-gray-800"
     >
       <div className="p-1 sm:p-4 max-w-2xl gap-6 h-full flex flex-col items-start justify-center">
-        <motion.h3
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.3 }}
-          className="font-semibold text-lg"
-        >
-          Mern Stack Developer
-        </motion.h3>
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -26,6 +25,19 @@ const HeroSection = () => {
         >
           Hello, I'm Manpreet Singh
         </motion.h1>
+
+        <p className="text-xl font-semibold">
+          <TypewriterComponent
+            options={{
+              strings: roles,
+              typeSepeed: 60,
+              deleteSpeed: 30,
+              delaySpeed: 2000,
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </p>
         <motion.p
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
