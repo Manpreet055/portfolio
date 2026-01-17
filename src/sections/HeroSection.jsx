@@ -23,7 +23,7 @@ const HeroSection = () => {
           Hello, I'm Manpreet Singh
         </motion.h1>
 
-        <p className="flex items-center md:text-lg whitespace-nowrap font-semibold">
+        <div className="flex items-center md:text-lg whitespace-nowrap font-semibold">
           I build&nbsp;
           <TypewriterComponent
             options={{
@@ -36,7 +36,7 @@ const HeroSection = () => {
             }}
           />
           web applications.
-        </p>
+        </div>
         <motion.p
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}

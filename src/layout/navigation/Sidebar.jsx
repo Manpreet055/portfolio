@@ -2,7 +2,7 @@
 
 import { BarsIcon, Drawer, DrawerItems } from "flowbite-react";
 import { useState, useEffect } from "react";
-import { User2, Instagram, Github, Linkedin } from "lucide-react";
+import { User2, Instagram, Github, Linkedin, Mail } from "lucide-react";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -138,6 +138,14 @@ const Sidebar = () => {
               className="text-blue-600 hover:text-blue-700 transitions"
             >
               <Linkedin />
+            </a>
+            <a
+              href="mailto:manpreet.mern@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-red-500 hover:text-red-600 transitions"
+            >
+              <Mail />
             </a>
           </div>
         </div>
