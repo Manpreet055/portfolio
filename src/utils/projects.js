@@ -8,9 +8,9 @@ import {
 } from "lucide-react";
 const projects = [
   {
-    projectName: "Stitche E-Commerce Website",
+    projectName: "E-Commerce Website",
     projectDescription:
-      "A full-featured e-commerce platform with product listings, shopping cart, and order management and authentication.",
+      "Full-stack e-commerce platform featuring dynamic catalogs, persistent shopping carts, and end-to-end order management.",
     Icon: ShoppingCart,
     liveLink: "https://stitche.vercel.app",
     githubRepo: "https://github.com/Manpreet055/Stitche_E-commerce",
@@ -18,14 +18,14 @@ const projects = [
   {
     projectName: "Admin Dashboard",
     projectDescription:
-      "An admin dashboard for managing users, products, messages and orders with data visualization for Stitche.",
+      "An admin dashboard for managing users, products, messages and orders with data visualization",
     Icon: LayoutDashboard,
     popover: true,
   },
   {
     projectName: "Backend API Service",
     projectDescription:
-      "An Backend API service built with Node.js and Express, providing RESTful endpoints, authentication, for Stitche.",
+      "An Backend API built with Node.js and Express, providing RESTful endpoints, authentication for dashboard and e-commerce.",
     Icon: Server,
     liveLink: "https://stitche-api.onrender.com/health",
     githubRepo: "https://github.com/Manpreet055/Stitche_Backend",

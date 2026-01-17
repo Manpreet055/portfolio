@@ -27,7 +27,10 @@ const ContactForm = () => {
         className="flex flex-col gap-4 w-full py-6 px-4 max-w-xl mx-auto"
       >
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="font-medium">
+          <label
+            htmlFor="name"
+            className="text-gray-400 dark:text-gray-300 font-medium"
+          >
             Name
           </label>
           <input
@@ -40,7 +43,10 @@ const ContactForm = () => {
           )}
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="font-medium">
+          <label
+            htmlFor="email"
+            className="text-gray-400 dark:text-gray-300 font-medium"
+          >
             Email
           </label>
           <input
@@ -70,7 +76,10 @@ const ContactForm = () => {
           <option value="feedback">Feedback</option>
         </select>
         <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="font-medium">
+          <label
+            htmlFor="message"
+            className="text-gray-400 dark:text-gray-300 font-medium"
+          >
             Message
           </label>
           <textarea

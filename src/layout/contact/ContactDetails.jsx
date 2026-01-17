@@ -2,13 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Phone, Mail } from "lucide-react";
 import ContactCard from "./ContactCard";
+import { container } from "../../animation/ListStagger";
 const ContactDetails = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.3 }}
+    <motion.ul
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
       className="grid grid-cols-2 gap-2 sm:gap-4 grid-rows-2  max-w-4xl  justify-evenly items-center w-full lg:max-w-xl lg:max-h-120 lg:min-h-90 "
     >
       <ContactCard
@@ -39,7 +40,7 @@ const ContactDetails = () => {
         text="Manpreet Singh"
         color="text-blue-600"
       />
-    </motion.div>
+    </motion.ul>
   );
 };
 
