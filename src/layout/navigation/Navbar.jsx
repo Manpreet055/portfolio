@@ -19,9 +19,12 @@ const NavbarComponent = () => {
       </NavbarBrand>
       <div className="flex items-center gap-2 md:gap-4 md:order-2">
         <DarkThemeToggle />
-        <button className="dark:text-black text-sm dark:bg-white bg-black text-white py-2 font-semibold hover:shadow-md shadow-xl transitions px-5 rounded-full hidden md:block whitespace-nowrap">
+        <a
+          href="mailto:manpreet.mern@gmail.com"
+          className="dark:text-black text-sm dark:bg-white bg-black text-white py-2 font-semibold hover:shadow-md shadow-xl transitions px-5 rounded-full hidden md:block whitespace-nowrap"
+        >
           Hire Me
-        </button>
+        </a>
         <SideBar />
       </div>
       <NavbarCollapse>
