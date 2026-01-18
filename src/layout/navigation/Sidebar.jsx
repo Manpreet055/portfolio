@@ -92,7 +92,7 @@ const Sidebar = () => {
 
         <DrawerItems className="focus:border-none">
           <a
-            href="#core-skills"
+            href="#techstack"
             onClick={() => handleNavClick("#core-skills")}
             className={getLinkClassName("#core-skills")}
           >

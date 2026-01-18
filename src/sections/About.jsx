@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col xl:flex-row  w-full sm:mx-6 mt-5 sm:mt-10 mb-10"
+      className="flex flex-col xl:flex-row w-full mt-5 sm:mt-10 mb-10"
     >
       <div className="w-full flex px-4 md:px-10 flex-col justify-start items-center">
         <motion.h1

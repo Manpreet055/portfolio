@@ -32,7 +32,7 @@ const NavbarComponent = () => {
           Home
         </NavbarLink>
         <NavbarLink href="#about">About</NavbarLink>
-        <NavbarLink href="#core-skills">Skills</NavbarLink>
+        <NavbarLink href="#techstack">Skills</NavbarLink>
         <NavbarLink href="#projects">Projects</NavbarLink>
         <NavbarLink href="#contact">Contact</NavbarLink>
       </NavbarCollapse>

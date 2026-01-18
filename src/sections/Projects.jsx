@@ -10,7 +10,7 @@ const Projects = () => {
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
   return (
     <section
-      className=" sm:mx-6 mt-5 sm:mt-10 mb-10 w-full flex  md:px-10 flex-col justify-center"
+      className="mt-5 sm:mt-10 mb-10 w-full flex  md:px-10 flex-col justify-center"
       id="projects"
     >
       <div className="flex w-full px-4 sm:px-0  mt-10 items-center justify-between">

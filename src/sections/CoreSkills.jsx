@@ -7,7 +7,7 @@ const CoreSkills = () => {
   return (
     <section
       id="core-skills"
-      className="w-full flex  md:px-10 flex-col justify-center items-center"
+      className="w-full flex  flex-col justify-center items-center"
     >
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
