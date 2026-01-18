@@ -5,6 +5,7 @@ import HeroSection from "./sections/HeroSection";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import FooterSection from "./sections/Footer";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <FooterSection />
       </main>
     </>
   );

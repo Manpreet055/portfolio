@@ -11,7 +11,7 @@ const Contact = () => {
       <h3 className="w-full text-sm text-gray-500 dark:text-gray-300 text-center font-medium mt-1 mb-4">
         Interested in working together? Let's connect!
       </h3>
-      <div className="flex gap-y-6 flex-col lg:flex-row mt-6 justify-around items-center w-full h-full ">
+      <div className="flex gap-y-6 flex-col lg:flex-row mt-6 gap-4 justify-around items-center w-full h-full ">
         <ContactDetails />
         <ContactForm />
       </div>
