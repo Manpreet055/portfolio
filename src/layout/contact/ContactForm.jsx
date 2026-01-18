@@ -1,8 +1,13 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import sendMessage from "../../services/contactService.js";
+import { Spinner } from "flowbite-react";
 
 const ContactForm = () => {
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState(null);
+  const [isMessageSent, setIsMessageSent] = React.useState(false);
   const {
     register,
     handleSubmit,
@@ -11,8 +16,10 @@ const ContactForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-    reset();
+    sendMessage(data, setLoading, setError, setIsMessageSent);
+    if (isMessageSent) {
+      reset();
+    }
   };
   return (
     <motion.div
@@ -95,13 +102,30 @@ const ContactForm = () => {
             </span>
           )}
         </div>
-        <div>
+        <div className="w-full flex justify-between itms-center">
           <button
+            disabled={loading}
             type="submit"
             className="primary-bg-gradient rounded-3xl font-medium px-10 py-3 text-white transitions hover:scale-105"
           >
-            Send Message
+            {loading ? (
+              <span className="flex items-center gap-2">
+                <Spinner size="sm" color="gray" aria-label="Loading spinner" />{" "}
+                Sending...
+              </span>
+            ) : (
+              "Send"
+            )}
           </button>
+          {error ? (
+            <span className="text-red-500 text-nowrap text-xs sm:text-sm">
+              {error || "Some error occurred"}
+            </span>
+          ) : isMessageSent ? (
+            <span className="primary-text-bg-gradient text-nowrap text-xs sm:text-sm">
+              Message sent successfully!
+            </span>
+          ) : null}
         </div>
       </form>
     </motion.div>
