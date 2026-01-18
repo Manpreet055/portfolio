@@ -23,7 +23,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="max-w-4xl text-sm sm:text-base text-start leading-loose Inter italic tracking-wider  text-theme  "
+            className="max-w-4xl text-sm sm:text-base text-start leading-loose Inter italic tracking-wider   dark:text-neutral-300 text-neutral-500   "
           >
             "I’m a full-stack MERN developer with hands-on experience building
             and deploying production-ready web applications. My journey into

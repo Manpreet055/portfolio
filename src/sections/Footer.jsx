@@ -8,7 +8,7 @@ const FooterSection = () => {
     <>
       <hr className="mt-6 w-full border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
       <Footer
-        className="max-w-7xl mb-10 bg-none theme   mx-auto shadow-effect transitions"
+        className="max-w-7xl sm:mb-10 bg-none theme   mx-auto shadow-effect transitions"
         container
         theme={footerTheme}
       >

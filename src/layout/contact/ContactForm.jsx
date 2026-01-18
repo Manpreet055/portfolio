@@ -20,7 +20,7 @@ const ContactForm = () => {
       whileInView={{ x: 0 }}
       exit={{ x: -50 }}
       transition={{ duration: 0.3 }}
-      className="shadow-effect theme transitions max-w-4xl w-full   rounded-xl"
+      className="shadow-effect theme  dark:text-neutral-300 text-neutral-500  transitions max-w-4xl w-full mt-4   rounded-xl"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -35,8 +35,9 @@ const ContactForm = () => {
           </label>
           <input
             id="name"
+            placeholder="Name"
             {...register("name", { required: "Name is required" })}
-            className="dark:border  shadow-md  dark:border-gray-500 p-2 rounded"
+            className="dark:border  shadow-md  dark:border-gray-500 p-2 rounded bg-gray-100 dark:bg-gray-700"
           />
           {errors.name && (
             <span className="text-red-500 text-sm">{errors.name.message}</span>

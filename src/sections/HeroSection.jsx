@@ -39,7 +39,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-sm sm:text-base   tracking-wide leading-snug sm:leading-relaxed sm:max-w-lg "
+            className="text-sm sm:text-base  dark:text-neutral-300 text-neutral-500 tracking-wide leading-snug sm:leading-relaxed sm:max-w-lg "
           >
             I’m a full-stack MERN developer who builds and deploys modern,
             scalable web applications. I focus on clean UI, solid backend
