@@ -7,7 +7,7 @@ const HeroSection = () => {
   const keywords = ["Secure", "Responsive", "Scalable", "Dynamic"];
   return (
     <section className="px-3 sm:px-3" id="hero">
-      <div className="lg:mx-16 mt-2 shadow-effect transitions sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 theme">
+      <div className="lg:mx-16 mt-2 shadow-effect cursor-pointer transitions sm:mt-6 overflow-hidden rounded-3xl relative flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 theme">
         <div className="p-1 sm:p-4 max-w-2xl gap-6 h-full flex flex-col items-start justify-center">
           <h1 className="text-lg sm:text-xl font-semibold ">
             Mern stack developer

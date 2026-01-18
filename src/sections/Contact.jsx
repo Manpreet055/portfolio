@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className=" px-4 flex-col justify-center items-center"
+      className=" px-4 flex-col mt-10 py-10 justify-center items-center"
     >
       <h2 className="text-4xl w-full font-bold text-center ">
         Get in <span className="primary-text-bg-gradient">Touch</span>

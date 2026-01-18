@@ -30,10 +30,10 @@ export const navbarTheme = createTheme({
     },
   },
   link: {
-    base: "block py-2 pl-3 pr-4 md:p-0",
+    base: "block py-2 pl-3 pr-4 transitions md:p-0",
     active: {
-      on: "bg-primary-700 text-white md:bg-transparent md:text-primary-700 dark:text-white",
-      off: "border-b border-gray-100 text-gray-700 hover:bg-gray-50 md:border-0 md:hover:bg-transparent md:hover:text-primary-700 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white",
+      on: "primary-text-bg-gradient  md:bg-transparent ",
+      off: "border-b border-gray-100 text-gray-500 hover:bg-gray-50 md:border-0 md:hover:bg-transparent md:hover:text-black dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white",
     },
     disabled: {
       on: "text-gray-400 hover:cursor-not-allowed dark:text-gray-600",

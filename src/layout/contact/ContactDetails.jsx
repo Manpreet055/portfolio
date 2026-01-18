@@ -10,7 +10,7 @@ const ContactDetails = () => {
       initial="hidden"
       whileInView="visible"
       exit="hidden"
-      className="grid grid-cols-2 gap-6 sm:gap-4 grid-rows-2  max-w-4xl  justify-evenly items-center w-full lg:max-w-xl lg:max-h-120 lg:min-h-90 "
+      className="grid grid-cols-2 gap-6  grid-rows-2  max-w-4xl  justify-evenly items-center w-full lg:max-w-xl lg:max-h-120 lg:min-h-90 "
     >
       <ContactCard
         Icon={Github}
