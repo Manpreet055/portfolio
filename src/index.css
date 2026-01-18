@@ -24,11 +24,11 @@ body {
 
 /* Gradient Backgrounds */
 .primary-text-bg-gradient {
-  @apply bg-linear-to-r from-blue-400 to-red-400 bg-clip-text text-transparent;
+  @apply bg-linear-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent;
 }
 /* Button Styles */
 .primary-bg-gradient {
-  @apply bg-linear-to-r from-blue-400 to-red-400 hover:opacity-90 text-white transition-all duration-300 ease-in-out;
+  @apply bg-linear-to-r from-blue-400 to-pink-400 hover:opacity-90 text-white transition-all duration-300 ease-in-out;
 }
 
 /* Theme Styles */
