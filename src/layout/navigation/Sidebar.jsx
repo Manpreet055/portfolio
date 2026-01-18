@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     // Set initial hash
-    setActiveHash(window.location.hash);
+    setActiveHash(window.location.hash || "#hero");
 
     // Listen for hash changes
     const handleHashChange = () => {

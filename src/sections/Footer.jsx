@@ -4,7 +4,6 @@ import { Footer, FooterDivider } from "flowbite-react";
 import { footerTheme } from "../utils/customFlowbiteThemes";
 import QuickLinks from "../layout/footer/QuickLinks";
 const FooterSection = () => {
-  const isMobile = window.innerWidth < 768;
   return (
     <>
       <hr className="mt-6 w-full border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
@@ -19,8 +18,8 @@ const FooterSection = () => {
               <div className="primary-text-bg-gradient font-extrabold whitespace-nowrap text-xl  dark:text-white">
                 {"<Manpreet />"}
               </div>
-              <p class="mt-2 text-sm text-gray-500 text-nowrap">
-                Full Stack Dev <span class="mx-1">|</span> Creative Designer
+              <p className="mt-2 text-sm text-gray-500 text-nowrap">
+                Full Stack Dev <span className="mx-1">|</span> Creative Designer
               </p>
             </div>
             <QuickLinks />

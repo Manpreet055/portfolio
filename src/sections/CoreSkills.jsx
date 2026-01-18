@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import CoreSkillsCard from "../ui/CoreSkillsCard.jsx";
 import coreSkills from "../utils/coreSkills.js";
-import { container, item } from "../animation/ListStagger.js";
 const CoreSkills = () => {
   return (
     <section
@@ -18,18 +17,14 @@ const CoreSkills = () => {
       >
         Core competencies{" "}
       </motion.h1>
-      <motion.ul
-        variants={container}
-        initial="hidden"
-        whileInView="visible"
-        exit="hidden"
-        viewport={{ once: true }}
-        className="h-full  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2  w-full place-items-center mt-6 gap-x-4 md:gap-y-4"
-      >
+      <ul className="h-full  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2  w-full place-items-center mt-6 gap-x-4 md:gap-y-4">
         {coreSkills.map((skill, index) => (
           <motion.li
             key={index}
-            variants={item}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3 }}
+            exit={{ opacity: 0, x: -50 }}
             className="flex justify-center"
           >
             <CoreSkillsCard
@@ -39,7 +34,7 @@ const CoreSkills = () => {
             />
           </motion.li>
         ))}
-      </motion.ul>
+      </ul>
     </section>
   );
 };

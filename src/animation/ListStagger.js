@@ -9,8 +9,8 @@ const container = {
 };
 
 const item = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { y: 20 },
+  visible: { y: 0 },
 };
 
 export { container, item };

@@ -8,9 +8,9 @@ const ContactDetails = () => {
     <motion.ul
       variants={container}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
       exit="hidden"
-      className="grid grid-cols-2 gap-4 grid-rows-2  max-w-4xl  justify-evenly items-center w-full lg:max-w-xl lg:max-h-120 lg:min-h-90 "
+      className="grid grid-cols-2 gap-2 sm:gap-4 grid-rows-2  max-w-4xl  justify-evenly items-center w-full lg:max-w-xl lg:max-h-120 lg:min-h-90 "
     >
       <ContactCard
         Icon={Github}

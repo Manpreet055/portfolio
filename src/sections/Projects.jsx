@@ -35,14 +35,19 @@ const Projects = () => {
         </button>
       </div>
       <div className="px-4 sm:px-8 xl:px-32 py-8 sm:py-10">
-        <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.ul
+          initial="hidden"
+          whileInView="visible"
+          variants={container}
+          className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {displayedProjects &&
             displayedProjects.map((project, index) => (
-              <li key={project.projectName || index}>
+              <motion.li key={project.projectName || index} variants={item}>
                 <ProjectCard project={project} />
-              </li>
+              </motion.li>
             ))}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );

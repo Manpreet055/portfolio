@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const RenderSkills = ({ skills, title }) => {
   return (
     <ul className="flex flex-wrap mt-4 gap-1 max-w-md justify-evenly gap-y-4">
@@ -7,12 +7,16 @@ const RenderSkills = ({ skills, title }) => {
         {title}
       </li>
       {skills.map((skill) => (
-        <li
+        <motion.li
+          initial={{ x: -50 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.3 }}
+          exit={{ x: -50 }}
           key={skill}
           className=" grid  h-15 w-fit px-5 text-theme whitespace-nowrap place-items-center  bg-gray-100 theme rounded-lg sm:text-base text-sm shadow-effect uppercase tracking-wider hover:border-purple-500    transitions"
         >
           {skill}
-        </li>
+        </motion.li>
       ))}
     </ul>
   );
