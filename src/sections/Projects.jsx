@@ -24,7 +24,7 @@ const Projects = () => {
           My <span className="primary-text-bg-gradient">Projects</span>
         </motion.h1>
         <button
-          className="absolute right-1 cursor-pointer   shadow-effect text-xs sm:text-base p-3 transitions rounded-lg theme text-nowrap font-medium group flex items-center gap-2"
+          className="absolute right-1 cursor-pointer shadow-effect text-xs sm:text-base p-3 transitions rounded-lg theme text-nowrap font-medium group flex items-center gap-2"
           onClick={() => setShowAll(!showAll)}
         >
           {showAll ? "Show Less" : "View All"}{" "}

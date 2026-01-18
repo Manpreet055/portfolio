@@ -46,7 +46,7 @@ const ContactForm = () => {
               id="name"
               placeholder="Name"
               {...register("name", { required: "Name is required" })}
-              className="dark:border w-full text-sm sm:text-base  shadow-md  dark:border-gray-500 p-2 pl-10 rounded bg-gray-100 dark:bg-gray-700"
+              className=" w-full text-sm sm:text-base  shadow-md   p-2 pl-10 rounded bg-gray-100 dark:bg-gray-700"
             />
           </span>
           {errors.name && (
@@ -73,7 +73,7 @@ const ContactForm = () => {
                   message: "Invalid email address",
                 },
               })}
-              className="dark:border pl-10 w-full text-sm sm:text-base  shadow-md dark:border-gray-500 p-2 rounded bg-gray-100 dark:bg-gray-700"
+              className=" pl-10 w-full text-sm sm:text-base  shadow-md  p-2 rounded bg-gray-100 dark:bg-gray-700"
             />
           </span>
           {errors.email && (
@@ -84,7 +84,7 @@ const ContactForm = () => {
         {/* Subject */}
         <select
           {...register("subject", { required: "Subject is required" })}
-          className="dark:border mt-4 text-sm sm:text-base shadow-md dark:border-gray-500 p-2 rounded bg-gray-100 dark:bg-gray-700"
+          className=" mt-4 text-sm sm:text-base shadow-md  p-2 rounded bg-gray-100 dark:bg-gray-700"
         >
           <option value="">Select a subject</option>
           <option value="general">General Inquiry</option>
@@ -102,7 +102,7 @@ const ContactForm = () => {
             placeholder="Your Message"
             id="message"
             {...register("message", { required: "Message is required" })}
-            className="dark:border  shadow-md dark:border-gray-500 p-2 rounded h-32 text-sm sm:text-base bg-gray-100 dark:bg-gray-700"
+            className="  shadow-md  p-2 rounded h-32 text-sm sm:text-base bg-gray-100 dark:bg-gray-700"
           />
           {errors.message && (
             <span className="text-red-500 text-sm">
