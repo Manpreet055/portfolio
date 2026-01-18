@@ -13,9 +13,9 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.5 }}
-          className="w-full text-start mt-10 text-3xl sm:text-4xl font-bold"
+          className="w-full text-center mt-10 text-3xl sm:text-4xl font-bold"
         >
-          About Me
+          About <span className="primary-text-bg-gradient">Me</span>
         </motion.h1>
         <div className="flex flex-col mt-6 w-full items-start justify-center gap-6">
           <motion.p
