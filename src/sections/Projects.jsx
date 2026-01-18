@@ -10,7 +10,7 @@ const Projects = () => {
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
   return (
     <section
-      className="mt-5 sm:mt-10 mb-10 w-full flex  md:px-10 flex-col justify-center"
+      className=" sm:mx-6 mt-5 sm:mt-10 mb-10 w-full flex  md:px-10 flex-col justify-center"
       id="projects"
     >
       <div className="flex w-full px-4 sm:px-0  mt-10 items-center justify-between">
@@ -24,7 +24,7 @@ const Projects = () => {
           My Projects
         </motion.h1>
         <button
-          className="sm:text-lg text-nowrap font-medium hover-transition group flex items-center gap-2"
+          className="sm:text-lg shadow-effect p-3 rounded-lg theme text-nowrap font-medium group flex items-center gap-2"
           onClick={() => setShowAll(!showAll)}
         >
           {showAll ? "Show Less" : "View All"}{" "}

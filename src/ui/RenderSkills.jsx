@@ -9,7 +9,7 @@ const RenderSkills = ({ skills, title }) => {
       {skills.map((skill) => (
         <li
           key={skill}
-          className=" grid  h-15 w-fit px-5 text-theme whitespace-nowrap place-items-center border-2 border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 rounded-lg sm:text-base text-sm shadow-md uppercase tracking-wider hover:border-purple-500    transitions"
+          className=" grid  h-15 w-fit px-5 text-theme whitespace-nowrap place-items-center  bg-gray-100 theme rounded-lg sm:text-base text-sm shadow-effect uppercase tracking-wider hover:border-purple-500    transitions"
         >
           {skill}
         </li>

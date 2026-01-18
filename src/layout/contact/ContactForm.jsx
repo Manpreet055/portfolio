@@ -17,10 +17,10 @@ const ContactForm = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -50 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
-      className="dark:border shadow-lg dark:border-gray-700 max-w-4xl w-full   rounded-xl"
+      className="shadow-effect theme transitions max-w-4xl w-full   rounded-xl"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
