@@ -1,4 +1,3 @@
-import { desc } from "framer-motion/client";
 import { Users, MessageCircle, Lightbulb, Zap } from "lucide-react";
 
 const coreSkills = [

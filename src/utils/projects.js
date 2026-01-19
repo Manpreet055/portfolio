@@ -1,4 +1,3 @@
-import { html } from "framer-motion/client";
 import {
   ShoppingCart,
   Server,

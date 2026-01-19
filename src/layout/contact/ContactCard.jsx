@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { item } from "../../animation/ListStagger";
-const ContactCard = ({ Icon = () => null, title, link, text, color = "" }) => {
+const ContactCard = ({ Icon = null, title, link, text, color = "" }) => {
   return (
     <motion.li
       variants={item}

@@ -4,22 +4,20 @@ import { BarsIcon, Drawer, DrawerItems } from "flowbite-react";
 import { useState, useEffect } from "react";
 import { User2, Instagram, Github, Linkedin, Mail } from "lucide-react";
 import profile from "../../assets/profile.jpg";
+import { set } from "react-hook-form";
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeHash, setActiveHash] = useState("");
+  const [activeHash, setActiveHash] = useState(window.location.hash || "#hero");
 
   useEffect(() => {
-    // Set initial hash
-    setActiveHash(window.location.hash || "#hero");
-
     // Listen for hash changes
     const handleHashChange = () => {
-      setActiveHash(window.location.hash);
+      setActiveHash(window.location.hash || "#hero");
     };
 
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
-  }, []);
+  }, [setActiveHash]);
 
   const handleClose = () => setIsOpen(false);
 

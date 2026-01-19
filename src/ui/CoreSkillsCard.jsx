@@ -1,6 +1,6 @@
 import React from "react";
 
-const CoreSkillsCard = ({ Icon, title, desc }) => {
+const CoreSkillsCard = ({ Icon = null, title, desc }) => {
   return (
     <div className="p-4 grow cursor-pointer theme shadow-effect transitions  min-h-50 rounded-lg   w-95 my-4">
       <Icon className="mb-2 primary-bg-gradient rounded-full p-2" size={46} />

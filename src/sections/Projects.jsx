@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import projects from "../utils/projects.js";
 import ProjectCard from "../ui/ProjectCard.jsx";
 import { motion } from "framer-motion";
