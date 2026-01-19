@@ -29,6 +29,9 @@ const ContactForm = () => {
       transition={{ duration: 0.3 }}
       className="shadow-effect theme cursor-pointer dark:text-neutral-300 text-neutral-500  transitions max-w-4xl w-full mt-4   rounded-xl"
     >
+      <h1 className="text-xl sm:text-2xl w-full clash tracking-wide text-center mt-4 font-bold">
+        Send a <span className="primary-text-bg-gradient">Message</span>
+      </h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-3 sm:gap-4 w-full p-6  max-w-xl mx-auto"

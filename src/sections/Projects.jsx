@@ -19,7 +19,7 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.5 }}
-          className="w-full text-center  text-3xl    sm:text-4xl font-bold"
+          className="w-full text-center  text-3xl clash tracking-wide   sm:text-4xl font-bold"
         >
           My <span className="primary-text-bg-gradient">Projects</span>
         </motion.h1>

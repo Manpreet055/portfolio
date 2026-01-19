@@ -39,7 +39,7 @@ const NavbarComponent = () => {
   return (
     <Navbar fluid rounded theme={navbarTheme}>
       <NavbarBrand href="#">
-        <span className="primary-text-bg-gradient font-extrabold  self-center whitespace-nowrap text-xl  dark:text-white">
+        <span className="primary-text-bg-gradient clash font-semibold tracking-wide self-center whitespace-nowrap text-xl  dark:text-white">
           {"<Manpreet />"}
         </span>
       </NavbarBrand>
@@ -47,7 +47,7 @@ const NavbarComponent = () => {
         <DarkThemeToggle className="cursor-pointer" />
         <a
           href="mailto:manpreet.mern@gmail.com"
-          className="theme-alt text-theme-alt py-2 font-semibold hover:shadow-md shadow-xl transitions px-5 rounded-full hidden md:block whitespace-nowrap"
+          className="theme-alt clash tracking-wide text-theme-alt py-2 font-semibold hover:shadow-md shadow-xl transitions px-5 rounded-full hidden md:block whitespace-nowrap"
         >
           Hire Me
         </a>

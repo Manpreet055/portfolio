@@ -13,7 +13,7 @@ const CoreSkills = () => {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="w-full h-fit text-center px-4 sm:px-0   mt-10 text-3xl sm:text-4xl font-bold"
+        className="w-full h-fit text-center px-4 sm:px-0 clash tracking-wide   mt-10 text-3xl sm:text-4xl font-bold"
       >
         Core <span className="primary-text-bg-gradient">competencies</span>
       </motion.h1>

@@ -15,7 +15,7 @@ const FooterSection = () => {
         <div className="w-full">
           <div className="w-full flex flex-col md:flex-row md:justify-between items-center md:items-start ">
             <div className="mb-6 md:mb-0 flex flex-col items-center">
-              <div className="primary-text-bg-gradient font-extrabold whitespace-nowrap text-xl  dark:text-white">
+              <div className="primary-text-bg-gradient font-semibold whitespace-nowrap text-xl clash tracking-wide  dark:text-white">
                 {"<Manpreet />"}
               </div>
               <p className="mt-2 text-sm text-gray-500 text-nowrap">

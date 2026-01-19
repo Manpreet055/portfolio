@@ -9,7 +9,7 @@ const TechStack = () => {
     >
       <div className="w-full sm:mx-6 px-4 md:px-10 flex flex-col justify-center items-center">
         <div className="text-center">
-          <h3 className="w-full text-theme text-3xl sm:text-4xl font-bold">
+          <h3 className="w-full text-theme text-3xl clash tracking-wide sm:text-4xl font-bold">
             Tech <span className="primary-text-bg-gradient">Stack</span>
           </h3>
           <p className="text-gray-400  my-2  sm:text-lg">

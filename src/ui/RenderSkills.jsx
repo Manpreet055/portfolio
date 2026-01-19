@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const RenderSkills = ({ skills, title }) => {
   return (
     <ul className="flex cursor-pointer flex-wrap mt-4 gap-1 max-w-md justify-evenly gap-y-4">
-      <li className="w-full text-theme text-center font-semibold text-xl">
+      <li className="w-full clash text-theme text-center font-semibold text-xl">
         {title}
       </li>
       {skills.map((skill) => (

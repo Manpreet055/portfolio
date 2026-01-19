@@ -7,7 +7,7 @@ const Contact = () => {
       id="contact"
       className=" px-4 flex-col mt-10 py-10 justify-center items-center"
     >
-      <h2 className="text-4xl w-full font-bold text-center ">
+      <h2 className="text-4xl w-full font-bold clash tracking-wide  text-center ">
         Get in <span className="primary-text-bg-gradient">Touch</span>
       </h2>
       <h3 className="w-full text-sm text-gray-500 dark:text-gray-300 text-center font-medium mt-1 mb-4">
