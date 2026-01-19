@@ -6,13 +6,12 @@ const ProjectCard = ({ project }) => {
     Icon = null,
     projectName = "",
     projectDescription = "",
-
     liveLink = "#",
     githubRepo = "#",
     popover = false,
   } = project;
   return (
-    <div className="bg-gray-100 cursor-pointer grid grid-rows-[60px_30px_80px_10px] sm:grid-rows-[60px_30px_100px_1fr] place-items-center  theme rounded-lg p-6 shadow-effect transitions">
+    <div className="bg-gray-100  cursor-pointer grid grid-rows-[60px_30px_80px_10px] sm:grid-rows-[60px_30px_100px_1fr] place-items-center  theme rounded-lg p-6 shadow-effect transitions">
       <Icon className="mx-auto mb-4 text-theme" size={48} />
       <h3 className="text-xl font-semibold mb-2 text-center">{projectName}</h3>
       <p className="max-w-sm mx-auto text-sm md:text-base  dark:text-neutral-300 text-neutral-500 text-center">

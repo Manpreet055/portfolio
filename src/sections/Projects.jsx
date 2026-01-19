@@ -4,7 +4,9 @@ import ProjectCard from "../ui/ProjectCard.jsx";
 import { motion } from "framer-motion";
 import { container, item } from "../animation/ListStagger.js";
 import { ArrowRightIcon } from "flowbite-react";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import ProjectsTechStack from "../layout/projects/ProjectsTechStack.jsx";
 const Projects = () => {
   const [showAll, setShowAll] = React.useState(false);
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
@@ -35,6 +37,7 @@ const Projects = () => {
         </button>
       </div>
       <div className="px-4 sm:px-8 xl:px-32 pt-8 sm:pt-10">
+        <ProjectsTechStack />
         <motion.ul
           initial="hidden"
           whileInView="visible"
