@@ -3,7 +3,7 @@
 import { BarsIcon, Drawer, DrawerItems } from "flowbite-react";
 import { useState, useEffect } from "react";
 import { User2, Instagram, Github, Linkedin, Mail } from "lucide-react";
-
+import profile from "../../assets/profile.jpg";
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeHash, setActiveHash] = useState("");
@@ -50,9 +50,10 @@ const Sidebar = () => {
         onClose={handleClose}
       >
         <div className="flex flex-col items-center mt-4">
-          <User2
-            className="h-30 border rounded-full w-30 text-gray-400"
-            strokeWidth={1}
+          <img
+            src={profile}
+            alt="Profile"
+            className="h-30 border rounded-full object-cover w-30 text-gray-400"
           />
           <h2 className="mt-2 text-lg tracking-wider font-semibold">
             Manpreet Singh
