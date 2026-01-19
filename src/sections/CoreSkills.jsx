@@ -21,10 +21,10 @@ const CoreSkills = () => {
         {coreSkills.map((skill, index) => (
           <motion.li
             key={index}
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ y: 100 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 0.3 }}
-            exit={{ opacity: 0, x: -50 }}
+            exit={{ y: 100 }}
             className="flex justify-center"
           >
             <CoreSkillsCard

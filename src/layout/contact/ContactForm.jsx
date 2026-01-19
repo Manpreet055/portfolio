@@ -23,9 +23,9 @@ const ContactForm = () => {
   };
   return (
     <motion.div
-      initial={{ x: -50 }}
-      whileInView={{ x: 0 }}
-      exit={{ x: -50 }}
+      initial={{ y: 100 }}
+      whileInView={{ y: 0 }}
+      exit={{ y: 100 }}
       transition={{ duration: 0.3 }}
       className="shadow-effect theme cursor-pointer dark:text-neutral-300 text-neutral-500  transitions max-w-4xl w-full mt-4   rounded-xl"
     >
@@ -117,7 +117,7 @@ const ContactForm = () => {
           <button
             disabled={loading}
             type="submit"
-            className="primary-bg-gradient cursor-pointer rounded-3xl mt-2 font-medium px-10 p-3 text-sm sm:text-base text-white transitions hover:scale-105"
+            className="primary-bg-gradient cursor-pointer rounded-3xl mt-2 font-bold px-10 p-3 text-sm sm:text-base text-white transitions hover:scale-105"
           >
             {loading ? (
               <span className="flex items-center gap-2">

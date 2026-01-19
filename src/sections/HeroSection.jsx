@@ -1,12 +1,13 @@
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
 import { motion } from "framer-motion";
+import illustartor from "../assets/undraw_programming_j1zw.svg";
 
 const HeroSection = () => {
   const keywords = ["Secure", "Responsive", "Scalable", "Dynamic"];
   return (
-    <section className="px-3 sm:px-3" id="hero">
-      <div className="lg:mx-16 mt-2 shadow-effect cursor-pointer transitions sm:mt-6 overflow-hidden rounded-3xl flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 theme">
+    <section className="px-3 sm:px-3 relative" id="hero">
+      <div className=" mt-2 shadow-effect cursor-pointer transitions sm:mt-6 overflow-hidden rounded-3xl flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 theme">
         <div className="p-1 sm:p-4 max-w-2xl gap-6 h-full flex flex-col items-start justify-center">
           <h1 className="text-lg sm:text-xl font-semibold ">
             Mern stack developer
@@ -15,7 +16,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl sm:text-6xl font-bold max-w-xs sm:max-w-lg"
+            className="text-4xl sm:text-6xl z-20 font-bold max-w-xs sm:max-w-lg"
           >
             Hello, I'm Manpreet Singh
           </motion.h1>
@@ -38,7 +39,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-sm sm:text-base  dark:text-neutral-300 text-neutral-500 tracking-wide relative leading-snug sm:leading-relaxed sm:max-w-lg "
+            className="text-sm sm:text-base z-20  dark:text-neutral-300 text-neutral-500 tracking-wide relative leading-snug sm:leading-relaxed sm:max-w-lg "
           >
             I’m a full-stack MERN developer who builds and deploys modern,
             scalable web applications. I focus on clean UI, solid backend
@@ -66,6 +67,14 @@ const HeroSection = () => {
           </motion.div>
         </div>{" "}
       </div>
+      <motion.img
+        initial={{ x: -50 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.3 }}
+        src={illustartor}
+        alt="Programming Illustration"
+        className="absolute right-4 md:right-10 lg:right-5 bottom-0 transitions dark:border-[#1f2937] border-[#f8f8f8] border-b w-64 md:w-96 lg:w-145 xl:w-170 hidden lg:block"
+      />
     </section>
   );
 };

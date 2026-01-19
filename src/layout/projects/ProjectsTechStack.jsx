@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectsTechStack = ({ project }) => {
   return (
-    <div className="h-57 theme flex flex-col">
+    <div className="h-full theme flex flex-col">
       <h4 className="list-none my-2 font-semibold w-full text-center">
         Tech Stack
       </h4>

@@ -63,7 +63,7 @@ const Projects = () => {
                   pagination={false}
                   spaceBetween={20}
                   slidesPerView={1}
-                  className="h-full shadow-effect transitions rounded-lg"
+                  className="h-full shadow-effect transitions max-h-57 rounded-lg"
                 >
                   <SwiperSlide>
                     <ProjectCard project={project} />

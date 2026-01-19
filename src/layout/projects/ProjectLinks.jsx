@@ -5,7 +5,7 @@ import { Github, Globe } from "lucide-react";
 const ProjectLinks = ({ project }) => {
   const { popover, liveLink, githubRepo } = project;
   return (
-    <div className="flex flex-col theme h-57 items-center w-full space-y-2">
+    <div className="flex flex-col theme h-full items-center w-full space-y-2">
       <h4 className="list-none my-2 font-semibold w-full text-center">
         Project Links
       </h4>
