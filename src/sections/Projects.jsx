@@ -6,7 +6,15 @@ import { container, item } from "../animation/ListStagger.js";
 import { ArrowRightIcon } from "flowbite-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import ProjectLinks from "../layout/projects/ProjectLinks.jsx";
 import ProjectsTechStack from "../layout/projects/ProjectsTechStack.jsx";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
 const Projects = () => {
   const [showAll, setShowAll] = React.useState(false);
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
@@ -37,7 +45,6 @@ const Projects = () => {
         </button>
       </div>
       <div className="px-4 sm:px-8 xl:px-32 pt-8 sm:pt-10">
-        <ProjectsTechStack />
         <motion.ul
           initial="hidden"
           whileInView="visible"
@@ -47,7 +54,34 @@ const Projects = () => {
           {displayedProjects &&
             displayedProjects.map((project, index) => (
               <motion.li key={project.projectName || index} variants={item}>
-                <ProjectCard project={project} />
+                <Swiper
+                  modules={[Navigation, Pagination]}
+                  navigation={{
+                    nextEl: ".next",
+                    prevEl: ".prev",
+                  }}
+                  pagination={false}
+                  spaceBetween={20}
+                  slidesPerView={1}
+                  className="h-full shadow-effect transitions rounded-lg"
+                >
+                  <SwiperSlide>
+                    <ProjectCard project={project} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProjectsTechStack project={project} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProjectLinks project={project} />
+                  </SwiperSlide>
+                  <button className="prev">
+                    <ArrowLeft size={20} />
+                  </button>
+
+                  <button className="next">
+                    <ArrowRight size={20} />
+                  </button>
+                </Swiper>
               </motion.li>
             ))}
         </motion.ul>

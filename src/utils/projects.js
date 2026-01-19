@@ -11,7 +11,7 @@ const projects = [
   {
     projectName: "E-Commerce Website",
     projectDescription:
-      "Full-stack e-commerce platform featuring dynamic catalogs, persistent shopping carts, and end-to-end order management.",
+      "Stitche is a Full-stack e-commerce platform featuring dynamic catalogs, persistent shopping carts, end-to-end order management, and secure user authentication.",
     Icon: ShoppingCart,
     liveLink: "https://stitche.vercel.app",
     githubRepo: "https://github.com/Manpreet055/Stitche_E-commerce",
@@ -20,15 +20,16 @@ const projects = [
       "Tailwind CSS",
       "Framer-motion",
       "Flowbite-React",
+      "Lucide-react-icons",
       "React-router-dom",
       "Axios",
-      "Lucide-react-icons",
+      "React-hook-form",
     ],
   },
   {
     projectName: "Admin Dashboard",
     projectDescription:
-      "An admin dashboard for managing users, products, messages and orders with data visualization",
+      "An admin dashboard for Stitche managing users, products, messages and orders of e-commerce platform with data visualization features using charts and graphs. ",
     Icon: LayoutDashboard,
     popover: true,
     techStack: [
@@ -36,15 +37,17 @@ const projects = [
       "Tailwind CSS",
       "Framer-motion",
       "Flowbite-React",
+      "Lucide-react-icons",
       "React-router-dom",
       "Axios",
-      "Lucide-react-icons",
+      "Recharts",
+      "React-hook-form",
     ],
   },
   {
     projectName: "Backend API Service",
     projectDescription:
-      "An Backend API built with Node.js and Express, providing RESTful endpoints, authentication for dashboard and e-commerce.",
+      "An Backend API for Stitche built with Node.js and Express, providing RESTful API endpoints, authentication for dashboard and e-commerce.",
     Icon: Server,
     liveLink: "https://stitche-api.onrender.com/health",
     githubRepo: "https://github.com/Manpreet055/Stitche_Backend",

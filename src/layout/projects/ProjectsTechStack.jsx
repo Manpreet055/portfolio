@@ -1,36 +1,19 @@
-import { ShoppingCart } from "lucide-react";
 import React from "react";
-import ProjectCard from "../../ui/ProjectCard";
 
-const ProjectsTechStack = () => {
-  const projects = {
-    projectName: "E-Commerce Website",
-    projectDescription:
-      "Full-stack e-commerce platform featuring dynamic catalogs, persistent shopping carts, and end-to-end order management.",
-    Icon: ShoppingCart,
-    liveLink: "https://stitche.vercel.app",
-    githubRepo: "https://github.com/Manpreet055/Stitche_E-commerce",
-    techStack: [
-      "React",
-      "Tailwind CSS",
-      "Framer-motion",
-      "Flowbite-React",
-      "React-router-dom",
-      "Axios",
-      "Lucide-react-icons",
-    ],
-  };
+const ProjectsTechStack = ({ project }) => {
   return (
-    <ul className="bg-gray-100 cursor-pointer grid grid-rows-6 gap-2 min-h-45 place-items-start list-disc theme rounded-lg p-4 shadow-effect transitions">
-      <li className="list-none font-semibold w-full text-center">
-        <h2>Tech Stack</h2>
-      </li>
-      {projects.techStack.map((tech, index) => (
-        <li key={index} className="text-sm mx-5 sm:text-base">
-          {tech}
-        </li>
-      ))}
-    </ul>
+    <div className="h-57 theme flex flex-col">
+      <h4 className="list-none my-2 font-semibold w-full text-center">
+        Tech Stack
+      </h4>
+      <ul className="overflow-auto cursor-pointer hide-scrollbar flex flex-col gap-2 place-items-start list-disc   rounded-lg px-6 py-1">
+        {project?.techStack.map((tech, index) => (
+          <li key={index} className="text-sm mx-5 sm:text-base">
+            {tech}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
