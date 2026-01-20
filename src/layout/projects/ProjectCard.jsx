@@ -4,7 +4,7 @@ import { Popover } from "flowbite-react";
 const ProjectCard = ({ project }) => {
   const { Icon = null, projectName = "", projectDescription = "" } = project;
   return (
-    <div className="bg-gray-100 cursor-pointer grid h-full w-full place-items-center theme p-6">
+    <div className="bg-gray-100 cursor-pointer grid h-full min-h-57 w-full place-items-center theme p-6">
       <Icon className="mx-auto mb-4 text-theme" size={48} />
       <h3 className="text-xl font-semibold mb-2 text-center">{projectName}</h3>
       <p className="max-w-sm mx-auto text-sm md:text-base dark:text-neutral-300 text-neutral-500 text-center">

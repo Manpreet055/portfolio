@@ -1,6 +1,6 @@
 import React from "react";
 import projects from "../utils/projects.js";
-import ProjectCard from "../ui/ProjectCard.jsx";
+import ProjectCard from "../layout/projects/ProjectCard.jsx";
 import { motion } from "framer-motion";
 import { container, item } from "../animation/ListStagger.js";
 import { ArrowRightIcon } from "flowbite-react";
@@ -25,9 +25,9 @@ const Projects = () => {
     >
       <div className="flex relative w-full px-4 sm:px-0  mt-10 items-center justify-between">
         <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -50 }}
+          initial={{ y: -50 }}
+          whileInView={{ y: 0 }}
+          exit={{ y: -50 }}
           transition={{ duration: 0.5 }}
           className="w-full text-center  text-3xl clash tracking-wide   sm:text-4xl font-bold"
         >
@@ -45,15 +45,16 @@ const Projects = () => {
         </button>
       </div>
       <div className="px-4 sm:px-8 xl:px-32 pt-8 sm:pt-10">
-        <motion.ul
-          initial="hidden"
-          whileInView="visible"
-          variants={container}
-          className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedProjects &&
             displayedProjects.map((project, index) => (
-              <motion.li key={project.projectName || index} variants={item}>
+              <motion.li
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 50 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                key={project.projectName || index}
+              >
                 <Swiper
                   modules={[Navigation, Pagination]}
                   navigation={{
@@ -84,7 +85,7 @@ const Projects = () => {
                 </Swiper>
               </motion.li>
             ))}
-        </motion.ul>
+        </ul>
       </div>
     </section>
   );

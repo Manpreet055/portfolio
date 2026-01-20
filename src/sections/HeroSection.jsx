@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className=" mt-2 shadow-effect cursor-pointer transitions sm:mt-6 overflow-hidden rounded-3xl flex items-start min-h-150vh px-4 sm:px-6 xl:px-32 py-8 sm:py-16 bg-gray-100 theme">
         <div className="p-1 sm:p-4 max-w-2xl gap-6 h-full flex flex-col items-start justify-center">
           <h1 className="text-lg sm:text-xl font-semibold ">
-            Mern stack developer
+            Full-stack Mern developer
           </h1>
           <motion.h1
             initial={{ opacity: 0, x: -100 }}
@@ -53,16 +53,16 @@ const HeroSection = () => {
             className="flex items-center gap-4"
           >
             <a
-              href="#contact"
-              className="px-5 py-3 primary-bg-gradient text-white rounded-3xl text-sm font-semibold hover:bg-blue-700 shadow-2xl transition"
-            >
-              Contact Me
-            </a>
-            <a
               href="#projects"
-              className="px-5 py-3 bg-white text-black rounded-3xl text-sm font-semibold hover:bg-gray-200 shadow-2xl transition-all duration-300 ease-in-out"
+              className="px-5 py-3 bg-white text-black rounded-3xl text-sm font-semibold hover:bg-gray-200 shadow-effect transitions"
             >
               View Portfolio
+            </a>
+            <a
+              href="#contact"
+              className="px-5 py-3 primary-bg-gradient text-white rounded-3xl text-sm font-semibold hover:bg-blue-700 shadow-effect transitions"
+            >
+              Contact Me
             </a>
           </motion.div>
         </div>{" "}
@@ -73,7 +73,7 @@ const HeroSection = () => {
         transition={{ duration: 0.3 }}
         src={illustartor}
         alt="Programming Illustration"
-        className="absolute right-4 md:right-10 lg:right-5 bottom-0 transitions dark:border-[#1f2937] border-[#f8f8f8] border-b w-64 md:w-96 lg:w-145 xl:w-170 hidden lg:block"
+        className="absolute right-4 md:right-10 lg:right-25 bottom-0 transitions dark:border-[#1f2937] border-[#f8f8f8] border-b w-64 md:w-96 lg:w-145 xl:w-170 hidden lg:block"
       />
     </section>
   );

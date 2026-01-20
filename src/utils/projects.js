@@ -10,7 +10,7 @@ const projects = [
   {
     projectName: "E-Commerce Website",
     projectDescription:
-      "Stitche is a Full-stack e-commerce platform featuring dynamic catalogs, persistent shopping carts, end-to-end order management, and secure user authentication.",
+      "Stitche is a Full-stack e-commerce platform featuring persistent shopping carts, order management, and secure user authentication.",
     Icon: ShoppingCart,
     liveLink: "https://stitche.vercel.app",
     githubRepo: "https://github.com/Manpreet055/Stitche_E-commerce",
@@ -28,7 +28,7 @@ const projects = [
   {
     projectName: "Admin Dashboard",
     projectDescription:
-      "An admin dashboard for Stitche managing users, products, messages and orders of e-commerce platform with data visualization features using charts and graphs. ",
+      "An admin dashboard for Stitche managing users, products, messages and orders with data visualization features using charts and graphs. ",
     Icon: LayoutDashboard,
     popover: true,
     techStack: [
@@ -55,7 +55,6 @@ const projects = [
       "Express",
       "MongoDB",
       "JWT Authentication",
-      "Bcrypt",
       "Mongoose",
       "Ngrok",
       "Cloudinary",
@@ -65,7 +64,7 @@ const projects = [
   {
     projectName: "Weather App",
     projectDescription:
-      "A weather forecasting app providing real-time updates, city search, and detailed forecasts.",
+      "A weather forecasting app providing 24 hours and daily  weather report, city search, and detailed forecasts like temperature, humidity, and AQI",
     Icon: Cloud,
     liveLink: "https://cloud-core.netlify.app",
     githubRepo: "https://github.com/Manpreet055/Weather-app",
@@ -74,7 +73,7 @@ const projects = [
   {
     projectName: "Personal Finance Tracker",
     projectDescription:
-      "An application to track income, expenses, and budget with visual reports and analytics.",
+      "An application to track income, expenses, and budget with visual reports. Dark mode, download and sort the data as PDF.",
     Icon: BanknoteArrowDown,
     liveLink: "https://asset-monitor-v1.netlify.app/",
     githubRepo: "https://github.com/Manpreet055/Expense-Tracker",
@@ -83,7 +82,7 @@ const projects = [
   {
     projectName: "Todo App",
     projectDescription:
-      "A simple and intuitive todo application with dark mode to manage daily tasks efficiently.",
+      "A simple and intuitive todo application with dark mode to manage daily tasks efficiently. Add, edit, delete, and mark tasks as completed.    ",
     Icon: ListTodo,
     liveLink: "https://get-it-done-fr.netlify.app/",
     githubRepo: "https://github.com/Manpreet055/To-do-App",

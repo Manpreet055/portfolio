@@ -27,7 +27,7 @@ const ContactForm = () => {
       whileInView={{ y: 0 }}
       exit={{ y: 100 }}
       transition={{ duration: 0.3 }}
-      className="shadow-effect theme cursor-pointer dark:text-neutral-300 text-neutral-500  transitions max-w-4xl w-full mt-4   rounded-xl"
+      className="shadow-effect theme cursor-pointer text-theme  transitions max-w-4xl w-full mt-4   rounded-xl"
     >
       <h1 className="text-xl sm:text-2xl w-full clash tracking-wide text-center mt-4 font-bold">
         Send a <span className="primary-text-bg-gradient">Message</span>
@@ -87,7 +87,7 @@ const ContactForm = () => {
         {/* Subject */}
         <select
           {...register("subject", { required: "Subject is required" })}
-          className=" mt-4 text-sm sm:text-base shadow-md  p-2 rounded bg-gray-100 dark:bg-gray-700"
+          className=" mt-4 text-sm sm:text-base shadow-md dark:text-neutral-300 text-neutral-500  p-2 rounded bg-gray-100 dark:bg-gray-700"
         >
           <option value="">Select a subject</option>
           <option value="general">General Inquiry</option>

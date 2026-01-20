@@ -47,7 +47,7 @@ const NavbarComponent = () => {
         <DarkThemeToggle className="cursor-pointer" />
         <a
           href="mailto:manpreet.mern@gmail.com"
-          className="theme-alt clash tracking-wide text-theme-alt py-2 font-semibold hover:shadow-md shadow-xl transitions px-5 rounded-full hidden md:block whitespace-nowrap"
+          className="theme-alt clash tracking-wide text-theme-alt py-2 font-semibold hover:shadow-md shadow-effect transitions px-5 rounded-full hidden md:block whitespace-nowrap"
         >
           Hire Me
         </a>
