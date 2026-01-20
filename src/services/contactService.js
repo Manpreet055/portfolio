@@ -1,16 +1,20 @@
 import api from "../utils/api";
 
-const sendMessage = async (
-  messageData,
-  SetLoadingState = () => {},
-  setError = () => {},
-  setIsMessageSent = () => {},
-) => {
+const sendMessage = async (obj) => {
+  const {
+    data,
+    setLoading = () => {},
+    setError = () => {},
+    setIsMessageSent = () => {},
+    reset = () => {},
+  } = obj;
   try {
-    SetLoadingState(true);
-    const response = await api.post("/api/messages/send", messageData);
+    setLoading(true);
+    const response = await api.post("/api/messages/send", data);
     if (response.status === 200) {
-      setIsMessageSent(true); // Indicate that the message was sent successfully
+      // Indicate that the message was sent successfully
+      setIsMessageSent(true);
+      reset();
     }
     return response.data;
   } catch (error) {
@@ -18,7 +22,7 @@ const sendMessage = async (
     setError(error.message || "Error. Please try again later");
     throw error;
   } finally {
-    SetLoadingState(false);
+    setLoading(false);
   }
 };
 

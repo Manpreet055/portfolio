@@ -16,10 +16,14 @@ const ContactForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    sendMessage(data, setLoading, setError, setIsMessageSent);
-    if (isMessageSent) {
-      reset();
-    }
+    const obj = {
+      data,
+      setLoading,
+      setError,
+      setIsMessageSent,
+      reset,
+    };
+    sendMessage(obj);
   };
   return (
     <motion.div
