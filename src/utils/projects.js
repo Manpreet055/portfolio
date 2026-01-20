@@ -66,9 +66,16 @@ const projects = [
     projectDescription:
       "A weather forecasting app providing 24 hours and daily  weather report, city search, and detailed forecasts like temperature, humidity, and AQI",
     Icon: Cloud,
-    liveLink: "https://cloud-core.netlify.app",
+    liveLink: "https://weather-core.vercel.app/",
     githubRepo: "https://github.com/Manpreet055/Weather-app",
-    techStack: ["HTML", "CSS", "JavaScript", "Weather API"],
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Axios",
+      "Lucide-icons",
+      "Weather API",
+    ],
   },
   {
     projectName: "Personal Finance Tracker",
