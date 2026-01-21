@@ -7,6 +7,7 @@ import {
 import { DarkThemeToggle } from "flowbite-react";
 import { navbarTheme } from "../../utils/customFlowbiteThemes";
 import SideBar from "./Sidebar";
+import { ArrowDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const NavbarComponent = () => {
@@ -46,10 +47,16 @@ const NavbarComponent = () => {
       <div className="flex items-center gap-2 md:gap-4 md:order-2">
         <DarkThemeToggle className="cursor-pointer" />
         <a
-          href="mailto:manpreet.mern@gmail.com"
-          className="theme-alt clash tracking-wide text-theme-alt py-2 font-semibold hover:shadow-md shadow-effect transitions px-5 rounded-full hidden md:block whitespace-nowrap"
+          className="primary-bg-gradient clash tracking-wide  py-2 font-semibold  shadow-effect transitions px-5 rounded-md hidden md:block whitespace-nowrap"
+          href="https://drive.google.com/uc?export=download&id=1xip8UreNNdagECfht_RHrEnQHtAhBuea"
+          download
         >
-          Hire Me
+          Download CV
+          <ArrowDown
+            className="inline-block ml-2 mb-1"
+            size={16}
+            strokeWidth={2.5}
+          />
         </a>
         <SideBar />
       </div>

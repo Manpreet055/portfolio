@@ -2,7 +2,14 @@
 
 import { BarsIcon, Drawer, DrawerItems } from "flowbite-react";
 import { useState, useEffect } from "react";
-import { User2, Instagram, Github, Linkedin, Mail } from "lucide-react";
+import {
+  User2,
+  Instagram,
+  Github,
+  Linkedin,
+  Mail,
+  ArrowDown,
+} from "lucide-react";
 import profile from "../../assets/profile.jpg";
 import { set } from "react-hook-form";
 const Sidebar = () => {
@@ -106,6 +113,20 @@ const Sidebar = () => {
             className={getLinkClassName("#contact")}
           >
             Contact Me
+          </a>
+        </DrawerItems>
+        <DrawerItems className="focus:border-none mt-6">
+          <a
+            className="primary-bg-gradient clash tracking-wide  py-2 font-semibold  shadow-effect transitions px-5 rounded-md  whitespace-nowrap"
+            href="https://drive.google.com/uc?export=download&id=1xip8UreNNdagECfht_RHrEnQHtAhBuea"
+            download
+          >
+            Download CV
+            <ArrowDown
+              className="inline-block ml-2 mb-1"
+              size={16}
+              strokeWidth={2.5}
+            />
           </a>
         </DrawerItems>
 
