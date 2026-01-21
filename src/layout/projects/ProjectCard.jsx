@@ -5,6 +5,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import ProjectOverview from "./ProjectOverview.jsx";
 import ProjectLinks from "./ProjectLinks.jsx";
 import ProjectsTechStack from "./ProjectsTechStack.jsx";
+import ProjectChallenges from "./ProjectChallenges.jsx";
+import ProjectKeyfeatures from "./ProductKeyfeatures.jsx";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -23,6 +25,16 @@ const ProjectCard = ({ project }) => {
       <SwiperSlide>
         <ProjectOverview project={project} />
       </SwiperSlide>
+      {project.keyFeatures && (
+        <SwiperSlide>
+          <ProjectKeyfeatures project={project} />
+        </SwiperSlide>
+      )}
+      {project.challenges && (
+        <SwiperSlide>
+          <ProjectChallenges project={project} />
+        </SwiperSlide>
+      )}
       <SwiperSlide>
         <ProjectsTechStack project={project} />
       </SwiperSlide>
