@@ -117,7 +117,7 @@ const Sidebar = () => {
         </DrawerItems>
         <DrawerItems className="focus:border-none mt-6">
           <a
-            className="theme-alt text-theme-alt clash  py-2 font-semibold  shadow-effect transitions px-5 rounded-md  whitespace-nowrap"
+            className="theme-alt text-theme-alt clash  py-2 font-semibold  shadow-effect transitions text-sm px-4 rounded-md  whitespace-nowrap"
             href="https://drive.google.com/uc?export=download&id=1xip8UreNNdagECfht_RHrEnQHtAhBuea"
             download
           >
@@ -125,7 +125,7 @@ const Sidebar = () => {
             <ArrowDown
               className="inline-block ml-2 mb-1"
               size={16}
-              strokeWidth={2.5}
+              strokeWidth={3}
             />
           </a>
         </DrawerItems>
