@@ -117,7 +117,7 @@ const Sidebar = () => {
         </DrawerItems>
         <DrawerItems className="focus:border-none mt-6">
           <a
-            className="primary-bg-gradient clash tracking-wide  py-2 font-semibold  shadow-effect transitions px-5 rounded-md  whitespace-nowrap"
+            className="theme-alt text-theme-alt clash  py-2 font-semibold  shadow-effect transitions px-5 rounded-md  whitespace-nowrap"
             href="https://drive.google.com/uc?export=download&id=1xip8UreNNdagECfht_RHrEnQHtAhBuea"
             download
           >

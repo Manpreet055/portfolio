@@ -47,7 +47,7 @@ const NavbarComponent = () => {
       <div className="flex items-center gap-2 md:gap-4 md:order-2">
         <DarkThemeToggle className="cursor-pointer" />
         <a
-          className="primary-bg-gradient clash tracking-wide  py-2 font-semibold  shadow-effect transitions px-5 rounded-md hidden md:block whitespace-nowrap"
+          className="theme-alt text-theme-alt clash tracking-wide  py-2 font-semibold transitions px-5 rounded-md hidden md:block whitespace-nowrap"
           href="https://drive.google.com/uc?export=download&id=1xip8UreNNdagECfht_RHrEnQHtAhBuea"
           download
         >

@@ -18,12 +18,12 @@ const projects = [
     techStack: [
       "React",
       "Tailwind CSS",
-      "Framer-motion",
+      "Framer Motion",
       "Flowbite-React",
-      "Lucide-react-icons",
-      "React-router-dom",
+      "Lucide React Icons",
+      "React Router DOM",
       "Axios",
-      "React-hook-form",
+      "React Hook Form",
     ],
     keyFeatures: [
       "Secure user authentication with JWT",
@@ -60,13 +60,13 @@ const projects = [
     techStack: [
       "React",
       "Tailwind CSS",
-      "Framer-motion",
+      "Framer Motion",
       "Flowbite-React",
-      "Lucide-react-icons",
-      "React-router-dom",
+      "Lucide React Icons",
+      "React Router DOM",
       "Axios",
       "Recharts",
-      "React-hook-form",
+      "React Hook Form",
     ],
     keyFeatures: [
       "Admin authentication with role-based access control",
@@ -80,7 +80,7 @@ const projects = [
       {
         title: "Handling Images in forms for product management",
         description:
-          "During product Creation i faced challenges in handling image uploads. the images keys was not being tracked by multer properly. to solve this i converted react-hook-form data to FormData and append images manually which resolved the issue.",
+          "During product creation, I faced challenges in handling image uploads. The image keys were not being tracked by Multer properly. To solve this, I converted React Hook Form data to FormData and appended images manually, which resolved the issue.",
       },
     ],
   },
@@ -89,7 +89,7 @@ const projects = [
   {
     projectName: "Backend API Service",
     projectDescription:
-      "An Backend API for Stitche built with Node.js and Express, providing RESTful API endpoints, authentication for dashboard and e-commerce.",
+      "A backend API for Stitche built with Node.js and Express, providing RESTful API endpoints and authentication for the dashboard and e-commerce.",
     Icon: Server,
     liveLink: "https://stitche-api.onrender.com/health",
     githubRepo: "https://github.com/Manpreet055/Stitche_Backend",
@@ -116,9 +116,9 @@ const projects = [
     ],
     challenges: [
       {
-        title: "Multer Cloudinary pipeline ",
+        title: "Multer Cloudinary pipeline setup",
         description:
-          "While implementing image uploads, I faced challenges in configuring Multer to work seamlessly with Cloudinary. After researching & taking help of my linkedin connections, I successfully set up a pipeline that uploads images directly to Cloudinary, ensuring efficient storage and retrieval of media assets.",
+          "While implementing image uploads, I faced challenges in configuring Multer to work seamlessly with Cloudinary. After researching and taking help from my LinkedIn connections, I successfully set up a pipeline that uploads images directly to Cloudinary, ensuring efficient storage and retrieval of media assets.",
       },
       {
         title: "Server sleeping issues on Render",
@@ -132,7 +132,7 @@ const projects = [
   {
     projectName: "Weather App",
     projectDescription:
-      "A weather forecasting app providing 24 hours and daily  weather report, city search, and detailed forecasts like temperature, humidity, and AQI",
+      "A weather forecasting app providing 24-hour and daily weather reports, city search, and detailed forecasts like temperature, humidity, and AQI.",
     Icon: Cloud,
     liveLink: "https://weather-core.vercel.app/",
     githubRepo: "https://github.com/Manpreet055/Weather-app",
@@ -141,7 +141,7 @@ const projects = [
       "CSS",
       "JavaScript",
       "Axios",
-      "Lucide-icons",
+      "Lucide Icons",
       "Weather API",
     ],
     keyFeatures: [
@@ -168,8 +168,8 @@ const projects = [
       "Sorting entries by date and amount",
       "Dark mode for better user experience",
       "Local data storage using LocalStorage",
-      "Download as Android app ",
-      "Download expense reports as PDF",
+      "Download as Android app",
+      "Download and export data as PDF files",
     ],
   },
 
@@ -177,7 +177,7 @@ const projects = [
   {
     projectName: "Todo App",
     projectDescription:
-      "A simple and intuitive todo application with dark mode to manage daily tasks efficiently. Add, edit, delete, and mark tasks as completed.    ",
+      "A simple and intuitive todo application with dark mode to manage daily tasks efficiently. Add, edit, delete, and mark tasks as completed.",
     Icon: ListTodo,
     liveLink: "https://get-it-done-fr.netlify.app/",
     githubRepo: "https://github.com/Manpreet055/To-do-App",
