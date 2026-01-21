@@ -1,24 +1,42 @@
 import React from "react";
-import { Popover } from "flowbite-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import ProjectOverview from "./ProjectOverview.jsx";
+import ProjectLinks from "./ProjectLinks.jsx";
+import ProjectsTechStack from "./ProjectsTechStack.jsx";
 
 const ProjectCard = ({ project }) => {
-  const { Icon = null, projectName = "", projectDescription = "" } = project;
   return (
-    <div className="bg-gray-100 cursor-pointer grid h-full min-h-57 w-full place-items-center theme p-6">
-      <Icon className="mx-auto mb-4 text-theme" size={48} />
-      <h3 className="text-xl font-semibold mb-2 text-center">{projectName}</h3>
-      <p className="max-w-sm mx-auto text-sm md:text-base dark:text-neutral-300 text-neutral-500 text-center">
-        {projectDescription.includes("Stitche") ? (
-          <>
-            {projectDescription.split("Stitche")[0]}
-            <span className="font-bold">Stitche</span>
-            {projectDescription.split("Stitche")[1]}
-          </>
-        ) : (
-          projectDescription
-        )}
-      </p>
-    </div>
+    <Swiper
+      modules={[Navigation, Pagination]}
+      navigation={{
+        nextEl: ".next",
+        prevEl: ".prev",
+      }}
+      pagination={false}
+      spaceBetween={20}
+      slidesPerView={1}
+      className="h-full shadow-effect transitions max-h-57 rounded-lg"
+    >
+      {/* project card */}
+      <SwiperSlide>
+        <ProjectOverview project={project} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <ProjectsTechStack project={project} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <ProjectLinks project={project} />
+      </SwiperSlide>
+      <button className="prev">
+        <ArrowLeft size={20} />
+      </button>
+
+      <button className="next">
+        <ArrowRight size={20} />
+      </button>
+    </Swiper>
   );
 };
 

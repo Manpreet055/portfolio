@@ -1,23 +1,10 @@
 import React from "react";
-import projects from "../utils/projects.js";
-import ProjectCard from "../layout/projects/ProjectCard.jsx";
 import { motion } from "framer-motion";
-import { container, item } from "../animation/ListStagger.js";
 import { ArrowRightIcon } from "flowbite-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import ProjectLinks from "../layout/projects/ProjectLinks.jsx";
-import ProjectsTechStack from "../layout/projects/ProjectsTechStack.jsx";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import RenderProjects from "../layout/projects/RenderProjects.jsx";
 
 const Projects = () => {
   const [showAll, setShowAll] = React.useState(false);
-  const displayedProjects = showAll ? projects : projects.slice(0, 3);
   return (
     <section
       className=" sm:px-6 mt-5 sm:mt-10  w-full flex  md:px-10 flex-col justify-center"
@@ -44,49 +31,7 @@ const Projects = () => {
           />{" "}
         </button>
       </div>
-      <div className="px-4 sm:px-8 xl:px-32 pt-8 sm:pt-10">
-        <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {displayedProjects &&
-            displayedProjects.map((project, index) => (
-              <motion.li
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 50 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-                key={project.projectName || index}
-              >
-                <Swiper
-                  modules={[Navigation, Pagination]}
-                  navigation={{
-                    nextEl: ".next",
-                    prevEl: ".prev",
-                  }}
-                  pagination={false}
-                  spaceBetween={20}
-                  slidesPerView={1}
-                  className="h-full shadow-effect transitions max-h-57 rounded-lg"
-                >
-                  <SwiperSlide>
-                    <ProjectCard project={project} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <ProjectsTechStack project={project} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <ProjectLinks project={project} />
-                  </SwiperSlide>
-                  <button className="prev">
-                    <ArrowLeft size={20} />
-                  </button>
-
-                  <button className="next">
-                    <ArrowRight size={20} />
-                  </button>
-                </Swiper>
-              </motion.li>
-            ))}
-        </ul>
-      </div>
+      <RenderProjects showAll={showAll} />
     </section>
   );
 };
