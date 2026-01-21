@@ -80,7 +80,7 @@ const projects = [
       {
         title: "Handling Images in forms for product management",
         description:
-          "During product Creation i faced challendes in handling image uploads. the images keys was not being tracked by multer properly. to solve this i converted react-hook-form data to FormData and append images manually which resolved the issue.",
+          "During product Creation i faced challenges in handling image uploads. the images keys was not being tracked by multer properly. to solve this i converted react-hook-form data to FormData and append images manually which resolved the issue.",
       },
     ],
   },
@@ -118,7 +118,7 @@ const projects = [
       {
         title: "Multer Cloudinary pipeline ",
         description:
-          "While implementing image uploadsm, I faced challenges in configuring Multer to work seamlessly with Cloudinary. After researching & taking help of my linkedin connections, I successfully set up a pipeline that uploads images directly to Cloudinary, ensuring efficient storage and retrieval of media assets.",
+          "While implementing image uploads, I faced challenges in configuring Multer to work seamlessly with Cloudinary. After researching & taking help of my linkedin connections, I successfully set up a pipeline that uploads images directly to Cloudinary, ensuring efficient storage and retrieval of media assets.",
       },
       {
         title: "Server sleeping issues on Render",
