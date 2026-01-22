@@ -56,7 +56,7 @@ const projects = [
     projectDescription:
       "An admin dashboard for Stitche managing users, products, messages and orders with data visualization features using charts and graphs. ",
     Icon: LayoutDashboard,
-    popover: true,
+    githubRepo: "https://github.com/Manpreet055/Stitche_Admin_Panel",
     techStack: [
       "React",
       "Tailwind CSS",

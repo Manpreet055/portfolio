@@ -3,14 +3,14 @@ import React from "react";
 import { Github, Globe } from "lucide-react";
 
 const ProjectLinks = ({ project }) => {
-  const { popover, liveLink, githubRepo } = project;
+  const { liveLink, githubRepo } = project;
   return (
     <div className="flex flex-col theme h-full items-center w-full space-y-2">
       <h4 className="list-none my-2 font-semibold w-full text-center">
         Project Links
       </h4>
       <div className="grid grid-cols-1 gap-3 pt-6 place-items-start">
-        {popover ? (
+        {!liveLink ? (
           <Popover
             aria-labelledby="default-popover"
             content={
@@ -41,7 +41,7 @@ const ProjectLinks = ({ project }) => {
         )}
 
         {/* Github repo */}
-        {popover ? (
+        {!githubRepo ? (
           <Popover
             aria-labelledby="default-popover"
             content={
