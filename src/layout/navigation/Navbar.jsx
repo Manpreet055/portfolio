@@ -48,8 +48,8 @@ const NavbarComponent = () => {
         <DarkThemeToggle className="cursor-pointer" />
         <a
           className="theme-alt text-theme-alt clash tracking-wide  py-2 font-semibold transitions px-5 rounded-md hidden md:block whitespace-nowrap"
-          href="https://drive.google.com/uc?export=download&id=1xip8UreNNdagECfht_RHrEnQHtAhBuea"
-          download
+          href="/Manpreet_Singh_MERN_Developer.pdf"
+          download="Manpreet_Singh_MERN_Developer.pdf"
         >
           Download CV
           <ArrowDown

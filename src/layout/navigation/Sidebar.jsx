@@ -118,8 +118,8 @@ const Sidebar = () => {
         <DrawerItems className="focus:border-none mt-6">
           <a
             className="theme-alt text-theme-alt clash  py-2 font-semibold  shadow-effect transitions text-sm px-4 rounded-md  whitespace-nowrap"
-            href="https://drive.google.com/uc?export=download&id=1xip8UreNNdagECfht_RHrEnQHtAhBuea"
-            download
+            href="/Manpreet_Singh_MERN_Developer.pdf"
+            download="Manpreet_Singh_MERN_Developer.pdf"
           >
             Download CV
             <ArrowDown
