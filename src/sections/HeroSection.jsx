@@ -16,7 +16,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl sm:text-6xl z-20 font-bold max-w-xs sm:max-w-lg"
+            className="text-4xl sm:text-6xl xl:text-7xl z-20 font-bold max-w-xs sm:max-w-lg xl:max-w-xl  "
           >
             Hello, I'm Manpreet Singh
           </motion.h1>
@@ -73,7 +73,7 @@ const HeroSection = () => {
         transition={{ duration: 0.3 }}
         src={illustartor}
         alt="Programming Illustration"
-        className="absolute right-4 md:right-10 lg:right-25 bottom-0 transitions dark:border-[#1f2937] border-[#f8f8f8] border-b w-64 md:w-96 lg:w-145 xl:w-170 hidden lg:block"
+        className="absolute right-4 md:right-10 lg:right-25 bottom-0 transitions dark:border-[#1f2937] border-[#f8f8f8] border-b w-64 md:w-96 lg:w-145 xl:w-180 hidden lg:block"
       />
     </section>
   );
