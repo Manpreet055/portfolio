@@ -5,7 +5,7 @@ const ContactCard = ({ Icon = null, title, link, text, color = "" }) => {
   return (
     <motion.li
       variants={item}
-      className="flex cursor-pointer flex-col h-40 theme justify-center shadow-effect transitions p-6 rounded-2xl  w-full items-center"
+      className="flex cursor-pointer grow flex-col h-40 theme justify-center shadow-effect transitions p-6 rounded-2xl  w-full items-center"
     >
       <span className="flex items-center gap-3 font-semibold">
         {" "}
