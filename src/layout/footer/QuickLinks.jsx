@@ -19,7 +19,7 @@ const QuickLinks = () => {
             </a>
           </li>
           <li>
-            <a className="text-sm md:text-base" href="#core-skills">
+            <a className="text-sm md:text-base" href="#techstack">
               Skills
             </a>
           </li>
